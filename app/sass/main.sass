@@ -1,0 +1,418 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+input[type=text]::-ms-clear
+  display: none
+  width: 0
+  height: 0
+
+input[type=text]::-ms-reveal
+  display: none
+  width: 0
+  height: 0
+
+::-webkit-scrollbar
+  width: 10px
+  height: 3px
+
+::-webkit-scrollbar-thumb
+  background: #ccc
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration
+  display: none
+  -webkit-appearance: none
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration
+  display: none
+  -webkit-appearance: none
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #d4dae1
+
+body input:required:valid,
+body textarea:required:valid
+  font-size: 14.94px
+  font-family: "LatoBold", sans-serif
+  text-transform: capitalize
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+body
+  width: 100%
+  background: #f8fafd
+p
+  color: #1972a4
+  font-family: "Lucida Grande Bold", sans-serif
+  font-size: 16px
+  font-weight: 700
+.header .container, .home-first-container
+    max-width: 1330px
+    padding: 0 15px
+    width: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+.home-first-container
+  align-items: start
+  margin-top: 65px
+
+.container
+  max-width: 1210px
+  width: 100%
+  margin: 0 auto
+  padding: 0 15px
+  position: relative
+
+.header
+  padding: 10px 0
+  &-logo-link
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: #1972a4
+    font-family: "Lucida Grande Bold", sans-serif
+    font-size: 41px
+    font-weight: 700
+    line-height: 1
+  &-img
+    width: 106px
+    margin-right: 25px
+  &-btn-menu
+    cursor: pointer
+    width: 34px
+    height: 34px
+    position: relative
+    -webkit-transition: background-color .5s ease
+    transition: background-color .5s ease
+    display: none
+  &-menu
+    display: flex
+  &-link
+    color: #1972a4
+    font-family: "Lucida Grande Bold", sans-serif
+    font-size: 16px
+    font-weight: 700
+    line-height: 1
+    margin-left: 25px
+    text-decoration: none
+  &-btn-menu.btn-active
+    z-index: 2
+    border-radius: 50px
+
+  &-btn-menu.bg-active
+    border-radius: 50px
+    z-index: 3
+
+.header-btn-menu.btn-active .header-line, .header-btn-menu.bg-active .header-line
+  background: #1972a4
+
+.header-btn-menu.btn-active .header-line_center, .header-btn-menu.bg-active .header-line_center
+  opacity: 0
+
+.header-btn-menu.btn-active .header-line_top, .header-btn-menu.bg-active .header-line_top
+  -webkit-transform: translateY(7px) rotate(225deg)
+  transform: translateY(7px) rotate(225deg)
+
+.header-btn-menu.btn-active .header-line_bottom, .header-btn-menu.bg-active .header-line_bottom
+  -webkit-transform: translateY(-7px) rotate(-225deg)
+  transform: translateY(-7px) rotate(-225deg)
+
+.header-line
+  width: 20px
+  height: 2px
+  display: block
+  background: #1972a4
+  position: absolute
+  left: calc(50% - 10px)
+  -webkit-transition: all .5s ease
+  transition: all .5s ease
+
+.header-line.header-line_top
+  top: 10px
+
+.header-line.header-line_center
+  top: 50%
+
+.header-line.header-line_bottom
+  bottom: 8px
+
+.home
+  position: relative
+  &-bg
+    position: relative
+    padding-bottom: 55px
+    overflow-x: hidden
+    &:before
+      content: ''
+      top: -30%
+      left: 0
+      position: absolute
+      transform: scale(1.6)
+      width: 100%
+      height: 100%
+      background: #f8fafd url("../img/bg-home1p.svg") no-repeat
+      background-size: 2000px
+      background-position-x: left
+      background-position-y: bottom
+      z-index: -1
+
+  &-first
+    &-nowrap
+      white-space: nowrap
+    &-left
+      margin-left: 60px
+    &-title
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      font-size: 48px
+      font-weight: 700
+      line-height: 1
+      margin: 0 0 45px 0
+    &-text
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      font-size: 22px
+      font-weight: 700
+      line-height: 38px
+    &-img
+      max-height: 28vw
+      max-width: 100%
+      object-fit: contain
+      &-two
+        margin-right: -70px
+      &-tree
+        margin-right: 100px
+    &-bg
+      background: #f8fafd url("../img/bg-home2.svg") no-repeat
+      margin-top: 45px
+      background-position-x: 30%
+      padding-bottom: 210px
+    &-phone
+      object-fit: cover
+      width: 100%
+      height: 145.8vw
+.product
+  &-second
+    background: url("../img/bg-process.svg") no-repeat
+    background-position-x: 61%
+    background-position-y: -92%
+    overflow: hidden
+    &-flex
+      display: flex
+      justify-content: space-between
+      padding-bottom: 90px
+    &-title
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      font-size: 36px
+      line-height: 1
+      font-weight: 700
+      margin-bottom: 80px
+      &-first
+        margin-bottom: 35px
+        margin-top: 70px
+    &-text
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      font-size: 22px
+      font-weight: 700
+      line-height: 30px
+      max-width: 470px
+    &-nowrap
+      white-space: nowrap
+    &-img
+      &-bg
+        object-fit: none
+        width: 100%
+        height: 66.5vw
+        margin-top: -270px
+  &-third
+    .container
+      padding: 60px 15px
+      border-top: 1px solid #cbe3fa
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    &-left
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      line-height: 1
+      font-size: 24px
+      font-weight: 700
+    &-right
+      display: flex
+    &-btn
+      padding: 0 55px
+      height: 46px
+      display: flex
+      align-items: center
+      line-height: 1
+      border-radius: 100px
+      text-decoration: none
+    .btn-contact
+      background-image: linear-gradient(45deg, #102397 0%, #187adf 55%, #00eaf8 100%)
+      color: #ffffff
+      font-family: "Lucida Grande Bold", sans-serif
+      font-size: 18px
+      font-weight: 700
+    .btn-new
+      font-family: "Montserrat-Medium", sans-serif
+      font-weight: 500
+      margin-left: 15px
+      color: #0663a3
+      font-size: 16px
+      border-width: 2px
+      border-style: solid
+      border-image-slice: 1
+      border-radius: 100px
+.process
+  &-first
+    padding-top: 50px
+    overflow: hidden
+    background: url("../img/bg-home2.svg") no-repeat 30% 120%
+    &-one
+      margin-right: -40px
+    &-two
+      margin-left: -60px
+    &-tree
+      margin-right: -245px
+    &-four
+      margin-left: 100px
+    &-flex
+      padding-bottom: 50px
+      &:nth-child(3)
+        padding-bottom: 0
+    &-block
+      margin-top: 75px
+.about
+  &-second
+    margin: 85px 0 0
+    padding-bottom: 80px
+    position: relative
+    background: url("../img/bg-home2.svg") no-repeat 40% top
+    &-title
+      color: #1972a4
+      font-family: "Lucida Grande Bold", sans-serif
+      line-height: 1
+      margin-bottom: 70px
+      font-size: 36px
+      font-weight: 700
+    &-text
+      line-height: 30px
+      max-width: 980px
+    &-img
+      position: absolute
+      top: 90px
+      left: 0
+      object-fit: none
+select
+  &:before
+    content: ""
+    background: url("../img/arrow.svg") no-repeat
+    position: absolute
+    right: 0
+    top: 0
+    width: 7px
+    height: 5px
+.footer
+  .container
+    display: flex
+    justify-content: space-between
+    border-top: 1px solid #cbe3fa
+    padding: 25px 15px
+  &-select
+    background: none
+    border: none
+    outline: none
+    position: relative
+    color: #677897
+    font-family: "Montserrat-Regular", sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 23px
+  &-block
+    display: flex
+  &-lang
+    display: flex
+    align-items: start
+    &-flex
+      position: relative
+    &-span
+      position: absolute
+      top: 6px
+      left: 5px
+      color: #ffffff
+      font-family: "Lucida Grande Bold", sans-serif
+      text-transform: uppercase
+      font-size: 10px
+  &-img
+    margin-right: 10px
+    position: relative
+  &-link
+    color: #7887a7
+    font-family: "Montserrat-Regular", sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 23px
+    text-decoration: none
+  &-list
+    margin-bottom: 9px
+    margin-left: 44px
+  &-address
+    &-flex
+      display: flex
+      align-items: start
+      margin-bottom: 15px
+    &-text
+      color: #b0b9ca
+      font-family: "Montserrat-Regular", sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      text-align: right
+      margin-right: 20px
+  &-social
+    display: flex
+    justify-content: flex-end
+    &-link
+      margin: 14px 0 0 23px
+  &-down
+    background: #e6effa
+    text-align: center
+    padding: 14px 0 11px
+    color: #2a4560
+    font-family: "Lucida Grande Bold", sans-serif
+    font-size: 12px
+    font-weight: 700
+    &-img
+      width: 20px
+
+
+
+@import "media"
+

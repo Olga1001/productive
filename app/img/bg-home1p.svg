@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3434.7 3004.3" style="enable-background:new 0 0 3434.7 3004.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.297;fill:#91B7DC;enable-background:new    ;}
+	.st1{filter:url(#BG);}
+	.st2{fill:#F6F9FD;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="2597.924" id="BG" width="2597.924" x="0" y="1014.506">
+	<feOffset  dy="2" input="SourceAlpha"></feOffset>
+	<feGaussianBlur  result="blur" stdDeviation="24.5"></feGaussianBlur>
+	<feFlood  flood-color="#1780e0" flood-opacity="0.271"></feFlood>
+	<feComposite  in2="blur" operator="in"></feComposite>
+	<feComposite  in="SourceGraphic" operator="over"></feComposite>
+</filter>
+<g id="Group_2" transform="translate(-1126.408 0.005)">
+	<path id="Rectangle_6" class="st0" d="M3310.7,45.1c30.3-46.2,92.3-59,138.5-28.7c3.7,2.4,7.2,5,10.5,7.9l1066.9,921.9
+		c41.8,36.1,46.4,99.3,10.3,141c-2.1,2.4-4.3,4.7-6.6,7L2589,2947.2c-17.8,17-41.4,26.9-66,27.6l-968.4,29.4
+		c-80.9,2.5-131.1-87.2-86.6-154.9L3310.7,45.1z"/>
+	<g transform="matrix(1, 0, 0, 1, 1126.41, -0.01)" class="st1">
+		<path id="BG-2_1_" class="st2" d="M1292,1080.6c36.7-41.3,99.9-45,141.2-8.3c1.5,1.3,2.9,2.6,4.3,4l822.4,822.4
+			c39.1,39.1,39.1,102.4,0,141.4l-859,859c-23.9,23.9-58.1,34.1-91.1,27.2L79.7,2669.5c-75.2-15.7-105.4-106.9-54.3-164.3
+			L1292,1080.6z"/>
+	</g>
+</g>
+</svg>
